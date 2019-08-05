@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZplWpfApp", "src\ZplWpfApp\ZplWpfApp.csproj", "{5DC5629B-D40E-42AE-8CB1-979119EC0C80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZplRenderingEngine", "src\ZplRenderingEngine\ZplRenderingEngine.csproj", "{E0E2E780-0520-49BC-BB8E-2B63E4EE6EB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{828A7DAE-10D9-4A4A-8D64-BF2DDCA3A707}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{5135CD28-D91F-491E-BACC-7BE7E97078A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{C7B70014-5919-4EE6-82D5-5202C2B0C20C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DC5629B-D40E-42AE-8CB1-979119EC0C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC5629B-D40E-42AE-8CB1-979119EC0C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC5629B-D40E-42AE-8CB1-979119EC0C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC5629B-D40E-42AE-8CB1-979119EC0C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E2E780-0520-49BC-BB8E-2B63E4EE6EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E2E780-0520-49BC-BB8E-2B63E4EE6EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E2E780-0520-49BC-BB8E-2B63E4EE6EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E2E780-0520-49BC-BB8E-2B63E4EE6EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5DC5629B-D40E-42AE-8CB1-979119EC0C80} = {C7B70014-5919-4EE6-82D5-5202C2B0C20C}
+		{E0E2E780-0520-49BC-BB8E-2B63E4EE6EB5} = {5135CD28-D91F-491E-BACC-7BE7E97078A2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9173295-173C-414B-B92B-D29CE12B44E1}
+	EndGlobalSection
+EndGlobal
