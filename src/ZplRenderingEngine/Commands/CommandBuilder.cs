@@ -67,9 +67,10 @@ namespace ZplRenderingEngine.Commands
             switch (command)
             {
                 case "^FD": _zplCommands.Add(new FD_ZplCommand(parameters)); break; // Field Data (Field)
-                case "^XA": _zplCommands.Add(new XA_ZplCommand()); break; // Start Format (Other)
+                case "^XA": _zplCommands.Add(new XA_ZplCommand()); break; // Start Format (Others)
+                case "^XZ": _zplCommands.Add(new XZ_ZplCommand()); break;// End Format (Others)
                 default:
-                    _buildErrors.Add($"{command}:{parameters} is not supported");
+                    _buildErrors.Add($"Skipped {command}:{parameters} as not supported");
                     break;
             }
         }
