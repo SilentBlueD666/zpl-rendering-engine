@@ -29,5 +29,19 @@ namespace ZplRenderingEngine.Tests
             Assert.True(lastCommand is XZ_ZplCommand);
             Assert.Equal("^XZ", lastCommand.Code);
         }
+
+        [Fact]
+        public void Ensure_Error_List_Contains_Skipped_Commands()
+        {
+            string zpl = "^XA^XXBadData^XZ";
+
+            var zplDocument = ZplDocument.CreateAndBuild(zpl);
+
+            var error = zplDocument.Errors.FirstOrDefault();
+
+            Assert.Equal(1, zplDocument.Errors.Count);
+            Assert.Equal(2, zplDocument.ZplCommands.Count);
+            Assert.Equal("Skipped ^XX:BadData as not supported", error);
+        }
     }
 }
